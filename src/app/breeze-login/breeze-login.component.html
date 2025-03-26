@@ -1,0 +1,33 @@
+<button (click)="openLogin()" tuiButton>Login to Breeze API</button>
+    <!-- <div *ngIf="sessionKeyInput"> -->
+      <input [(ngModel)]="sessionKey" placeholder="Enter session key" />
+      <button (click)="submitSessionKey()" tuiButton>Submit</button>
+    <!-- </div> -->
+
+    <div>
+      Get customer
+
+      <button (click)="getCustomerDetails()" tuiButton>
+
+        Cutomer dta
+      </button>
+    </div>
+
+    <div>
+      <button tuiButton (click)="getOptionChain()">
+        getOptionChain
+      </button>
+
+    </div>
+
+    <button tuiButton (click)="connectWebSocket()">
+      connectWebSocket
+    </button>
+
+    <button tuiButton (click)="historyv2()">
+      history of data
+    </button>
+
+    <button tuiButton (click)="getQuotes()">
+      quote
+    </button>
